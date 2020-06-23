@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MiViaje.com</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="hero">
+        <header class="header contenedor">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <nav class="navegacion">
+                <a href="#">Vender</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Registro</a>
+                <a href="#">Iniciar sessión</a>
+            </nav>
+        </header>
+        <div class="contenido-hero contenedor">
+            <h1>Encuentra hospedaje para tus próximas vacaciones</h1>
+            <form action="#" class="form">
+                <input type="text" name="busqueda" class="busqueda" placeholder="New York. Londres, Roma, Guadalajara">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+        <!---Contenido del hero busqueda-->
+    </div><!---FIN CONDENIDO HERO-->
+
+    <!---Contenido de abajo-->
+    <main class="contenido contenedor">
+        <section class="hacer">
+            <h2>¿Que vamos hacer estas vacaciones?</h2>
+            <div class="contenedor-cards">
+                <div class="card">
+                    <img src="img/hacer1.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria concierto">Concierto</p>
+                        <p class="titulo">Música Electronica 2019</p>
+                        <p class="precio">$ 1,200 por persona</p>
+                    </div><!--CIERRE DE INFORMACION-->
+                </div><!---CIERRE DEL CARD-->
+
+                <!--CARD 2-->
+                <div class="card">
+                    <img src="img/hacer2.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria concierto">Concierto</p>
+                        <p class="titulo">Rock en los Ángeles 2019</p>
+                        <p class="precio">$ 2,200 por persona</p>
+                    </div><!--CIERRE DE INFORMACION-->
+                </div><!---CIERRE DEL CARD-->
+
+                <!--CARD 3-->
+                <div class="card">
+                    <img src="img/hacer3.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria clase">Clase de cocina</p>
+                        <p class="titulo">Comida mexicana y española</p>
+                        <p class="precio">$ 500 por persona</p>
+                    </div><!--CIERRE DE INFORMACION-->
+                </div><!---CIERRE DEL CARD-->
+
+                <!--CARD 4-->
+                <div class="card">
+                    <img src="img/hacer4.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria paseo"> Montain-bike</p>
+                        <p class="titulo">Paseo en las montañas</p>
+                        <p class="precio">$ 800 por persona</p>
+                    </div><!--CIERRE DE INFORMACION-->
+
+                </div><!---CIERRE DEL CARD-->
+            </div><!---CIERRE DE LAS CARDS-->
+        </section>
+
+        <!---Banner pequeño-->
+        <section class="modulo">
+            <h2>Presentamos Miviaje.com Plus</h2>
+            <!---HEREDAMOS .CONTENEDOR-CARDS YA ESCRITA ANTES-->
+            <div class="contenedor-cards premium">
+                <div class="info">
+                    <h3>Una nueva seccion de alojamientos de lujo</h3>
+                    <a href="#" class="boton">Explorar Alojamientos</a>
+                </div>
+            </div>
+        </section>
+        <!---SECCION 2 HOSPEDAJE-->
+        <section class="modulo">
+        <h2>Hospedaje</h2>
+        <!---USAMOS LA HERENCIA DEL CSS DE CONTENEDOR-CARDS YA HECHA ANTERIORMENTE  
+            .contenedor-cards{
+             display: grid;
+            /*le ponemos esto porque definimos 
+            el mixmax en 1100px/4 = 275 apox*/
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 1rem;
+            }
+    -->
+        <div class="contenedor-cards">
+            <div class="card">
+                <img src="img/hospedaje1.jpg" alt="">
+                <div class="info">
+                    <p class="categoria hospeedaje">Casa completa</p>
+                    <p class="titulo">Casa completa con todos los servicios y 2 recamaras</p>
+                    <p class="precio">$ 1,200 por noche</p>
+                </div><!--CIERRE DE INFORMACION-->
+            </div><!---CIERRE DEL CARD-->
+            <div class="card">
+                <img src="img/hospedaje2.jpg" alt="">
+                <div class="info">
+                    <p class="categoria hospeedaje">Un cuarto con 2 camas</p>
+                    <p class="titulo">1 Cuarto con 2 camas y alberca</p>
+                    <p class="precio">$ 3,200 por noche</p>
+                </div><!--CIERRE DE INFORMACION-->
+            </div><!---CIERRE DEL CARD-->
+            <div class="card">
+                <img src="img/hospedaje3.jpg" alt="">
+                <div class="info">
+                    <p class="categoria hospeedaje">Cabaña completa - 4 camas</p>
+                    <p class="titulo">Cabaña en bosque para 6 personas</p>
+                    <p class="precio">$ 6,200 por noche</p>
+                </div><!--CIERRE DE INFORMACION-->
+            </div><!---CIERRE DEL CARD-->
+        </div>
+        </section>
+
+        <!--SECCION DE LOS LUGARES MAS VISITADOS-->
+        <section class="destinos modulo">
+            <h2>Destinos populares</h2>
+            <div class="contenedor-cards">
+                <div class="card">
+                    <img src="img/populares1.jpg" alt="">
+                    <div class="info">
+                        <p class="titulo">Austria</p>
+                    </div><!--CIERRE DE INFORMACION-->
+                </div><!---CIERRE DEL CARD-->
+                <div class="card">
+                    <img src="img/populares2.jpg" alt="">
+                    <div class="info">
+                        <p class="titulo">Francia</p>
+                    </div><!--CIERRE DE INFORMACION-->
+                </div><!---CIERRE DEL CARD-->
+                <div class="card">
+                    <img src="img/populares3.jpg" alt="">
+                    <div class="info">
+                        <p class="titulo">Grecia</p>
+                    </div><!--CIERRE DE INFORMACION-->
+                </div><!---CIERRE DEL CARD-->
+                <div class="card">
+                    <img src="img/populares4.jpg" alt="">
+                    <div class="info">
+                        <p class="titulo">Inglaterra</p>
+                    </div><!--CIERRE DE INFORMACION-->
+                </div><!---CIERRE DEL CARD-->
+            </div>
+        </section>
+        <!--QUE HACER EN NEW YORK ANUNCIOS-->
+        <section class="modulo">
+            <h2>¿Que vamos hacer en New York?</h2>
+            <div class="contenedor-cards">
+                <div class="card">
+                    <img src="img/newyork1.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria clase">Clase de comida</p>
+                        <p class="titulo">Comida japonesa para principiantes</p>
+                        <p class="precio">$ 300 por persona</p>
+                    </div><!--CIERRE DE INFORMACION-->
+                </div><!---CIERRE DEL CARD-->
+
+                <!--CARD 2-->
+                <div class="card">
+                    <img src="img/newyork2.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria concierto">Concierto</p>
+                        <p class="titulo">Festival EDM 2019</p>
+                        <p class="precio">$ 1,200 por persona</p>
+                    </div><!--CIERRE DE INFORMACION-->
+                </div><!---CIERRE DEL CARD-->
+
+                <!--CARD 3-->
+                <div class="card">
+                    <img src="img/newyork3.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria clase">Clase de cocina</p>
+                        <p class="titulo">Paella Dominicana</p>
+                        <p class="precio">$ 200 por persona</p>
+                    </div><!--CIERRE DE INFORMACION-->
+                </div><!---CIERRE DEL CARD-->
+
+                <!--CARD 4-->
+                <div class="card">
+                    <img src="img/newyork4.jpg" alt="">
+                    <div class="info">
+                        <p class="categoria paseo"> Paseos turistico</p>
+                        <p class="titulo">Paseo a caballo</p>
+                        <p class="precio">$ 100 por persona</p>
+                    </div><!--CIERRE DE INFORMACION-->
+
+                </div><!---CIERRE DEL CARD-->
+            </div><!---CIERRE DE LAS CARDS-->
+        </section>
+    </main>
+    <!--CREAMOS UN ID PARA HACER LA FUNCION DE OCULTAR EN JS-->
+    <footer id="footer" class="footer">
+        <div class="contenedor-cards contenedor">
+            <div class="nav-footer">
+                <h3>Miviaje.com</h3>
+                <nav class="menu">
+                    <a href="#">Empleo</a>
+                    <a href="#">Prensa</a>
+                    <a href="#">Politicas</a>
+                    <a href="#">Ayuda</a>
+                </nav>
+            </div><!--navegacion menu-->
+            <div class="nav-footer">
+                <h3>Descubre Miviaje.com</h3>
+                <nav class="menu">
+                    <a href="#">Confianza y seguridad</a>
+                    <a href="#">Crédito de viajero</a>
+                    <a href="#">AirBNB Citizen</a>
+                    <a href="#">Viaje de negocios</a>
+                </nav>
+            </div><!--navegacion menu-->
+            <div class="nav-footer">
+                <h3>Hospedaje</h3>
+                <nav class="menu">
+                    <a href="#">Razones de Hospedar</a>
+                    <a href="#">Hospitalidad</a>
+                    <a href="#">Ser un Anfitrión responsable</a>
+                    <a href="#">Centro de la comunidad</a>
+                </nav>
+            </div><!--navegacion menu-->
+            <div class="nav-footer">
+                <nav class="sociales">
+                    <ul>
+                        <li><a href="http://facebook.com" target="_blank"><span>facebook</span></a></li>
+                        <li><a href="http://twitter.com" target="_blank"><span>Twitter</span></a></li>
+                        <li><a href="http://instagram.com" target="_blank"><span>Instagram</span></a></li>
+                    </ul>
+                </nav>
+                <nav class="menu">
+                    <a href="#">Razones de Hospedar</a>
+                    <a href="#">Hospitalidad</a>
+                    <a href="#">Ser un Anfitrión responsable</a>
+                    <a href="#">Centro de la comunidad</a>
+                </nav>
+            </div><!--navegacion menu-->
+        </div><!--contenedor-->
+    </footer>
+    <a href="#" class="btn-flotante">Idioma y Moneda</a>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
